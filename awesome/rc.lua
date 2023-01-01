@@ -336,7 +336,7 @@ globalkeys = gears.table.join(
 
     --Volume Control 
      awful.key({ modkey },           "v",       function () awful.util.spawn("pavucontrol") end,
-     {description + "Volume",   group = "Applications"}),		
+     {description = "Volume",   group = "Applications"}),		
     
      -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
