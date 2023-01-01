@@ -338,6 +338,13 @@ globalkeys = gears.table.join(
      awful.key({ modkey },           "v",       function () awful.util.spawn("pavucontrol") end,
      {description = "Volume",   group = "Applications"}),		
     
+   
+     --Rofi
+     awful.key({ modkey },         "d",        function () awful.util.spawn("rofi -show drun") end,
+     {description = "Rofi",    group = "Launcher"}),
+    
+
+
      -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
               {description = "show the menubar", group = "launcher"})
