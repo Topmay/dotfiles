@@ -45,7 +45,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
+beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
@@ -331,8 +331,14 @@ globalkeys = gears.table.join(
 
 
        --File Manager
-       awful.key({ modkey },           "e",       function () awful.util.spawn("thunar") end,
+       awful.key({ modkey },           "e",       function () awful.util.spawn("pcmanfm") end,
        {description = "File Manager", group = "Applications"}),
+
+    --Volume Control 
+     awful.key({ modkey },           "v",       function () awful.util.spawn("pavucontrol") end,
+     {description + "Volume",   group = "Applications"}),
+
+
 
 		
     -- Menubar
