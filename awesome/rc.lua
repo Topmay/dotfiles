@@ -590,9 +590,6 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
  -- Autorun programs
  --awful.spawn.with_shell("")
 
- --Right click menu
- local freedesktop = require("freedesktop")
-mymainmenu = freedesktop.menu.build() 
 
 
 
