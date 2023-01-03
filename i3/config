@@ -202,3 +202,5 @@ bindsym $mod+r mode "resize"
 # Autostart 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id "nitrogen --restore &"
+#Remove Window Borders
+for_window [class="^.*"] border pixel 0
